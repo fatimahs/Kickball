@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> <%= @positions %> </h1>
+
+<h3>Players & Teams </h3>
+<ol>
+<% @spot.each do |player| %>
+  <li><%= player["first_name"]%> <%= player["last_name"]%> <b>  Team:  </b><%= player["team"]%></li>
+
+ <% end %>
+</ol>
+
+
+</body>
+</html>
