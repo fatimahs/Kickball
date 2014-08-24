@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1><center> <%= @team %> </center> </h1>
+
+
+<ol>
+<h3>Players & Position </h3>
+<% @members.each do |player| %>
+  <li><%= player["first_name"]%> <%= player["last_name"]%> <b>  Position:  </b><%= player["position"]%></li>
+
+ <% end %>
+</ol>
+
+
+<!-- <ul>
+<h3> First Name</h3>
+<% @members.each do |player| %>
+ <li><%= player["first_name"]%></li>
+<% end %>
+</ul>
+
+<ul>
+<h3>Last Name</h3>
+<% @members.each do |player| %>
+ <li><%= player["last_name"]%></li>
+<% end %>
+</ul>
+-->
+<!-- <ul>
+<h3>Position </h3>
+<% @members.each do |player| %>
+  <li><%= player["position"]%></li>
+<% end %>
+</ul>
+ -->
+</body>
+</html>
+
+
